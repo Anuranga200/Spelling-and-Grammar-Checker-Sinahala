@@ -15,7 +15,7 @@ def check_grammar_sinhala(sentence, nlp_pipeline):
         suggestions.append(predictions[0]['token_str'])
     return suggestions
 
-if _name_ == "_main_":
+if __name__ == "_main_":
     # Example input
     input_sentence = "මම විදුලී සංගීටය අගනාගයි"
     
