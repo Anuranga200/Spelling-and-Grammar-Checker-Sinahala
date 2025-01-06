@@ -52,7 +52,9 @@ def correct_text(text, method='close_matches'):
     return ' '.join(corrected_words)
 
 # Test the function
-input_text = "සුළු ගමක උත්සශීලී ළමයකු විශාල වනයකු අසල ජීතය ගත කළා."  # Intentional errors for testing
+input_text = """මගේ මවගේ නම කමලා. ඇය මට ඉගැනීමට උදව් කරන්නේය. ඇයට දිගු කොණ්ඩයක් ඇත. 
+                අම්මා ගෙදර පිරිසිදුව තබා ගෙන සිටින්නීය. මගේ අම්මා හරිම කරුණාවන්තයි. අම්මා උදේම අවදි වන්නීය. 
+                මම අම්මාට ගොඩක් ස්තූතී වන්ත වෙමු."""  # Intentional errors for testing
 corrected_text_close_matches = correct_text(input_text, method='close_matches')
 print("--------------------------------------------")
 print("Corrected Text with close matches:", corrected_text_close_matches)
